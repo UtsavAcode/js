@@ -8,3 +8,4 @@ fruits.forEach(function(fruit,index){
 });
 
 //this is new 
+//check second 
