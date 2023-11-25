@@ -6,3 +6,5 @@ fruits.forEach(function(fruit,index){
     tag[index].innerHTML =fruit+'<i class="bi bi-x-lg"></i>';
     
 });
+
+//this is new 
