@@ -6,5 +6,5 @@ card.addEventListener('mousemove', runEvent);
 function runEvent(e){
     
 
-    document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY},40`;
+    document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY},69`;
 }
