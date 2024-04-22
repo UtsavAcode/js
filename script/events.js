@@ -40,7 +40,7 @@ function addTask(e){
     link.className='clear';
 
     //if you want to add a new html element
-    link.innerHTML = "<i class='clear bi bi-x-lg'></i>";
+    link.innerHTML = "<i class='clear bi bi-x-lg text-dark'></i>";
 
     // append the created element to td 
     td.appendChild(link);
