@@ -1,78 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-.container{
-    border: 1px solid green;
-    margin: 20px;
-    width: 35%;
-    margin-left: 35%;
-    background-color: white;
+#tweet {
+  margin-left: 45%;
+  margin-top: 5%;
 }
 
-.sec1{
-    border-bottom: 1px solid green;
+#number {
+  text-align: center;
+  width: 100%;
+  
 }
-h1{
-    margin-top: 15px;
-    margin-left: 20px;
-
-}
-
-.inp{
-    margin-top: 5px;
-    margin-left: 20px;
-    padding: 10px;
-    width: 95%;
-    border: none;
-    border-bottom: 1px solid black;
-}
-
-.button{
-    margin-top: 15px;
-    margin-left: 20px;
-    margin-bottom: 15px;
-    height: 32px;
-    width:25%;
-    background: black;
-    color: white;
-    border-radius: 3%;
-    
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
-
-table{
-    margin-left: 20px;
-    margin-bottom: 15px;
-    width: 90%;
-    margin-top: 8px;
-
-}
-
-td{
-    padding:5px;
-    padding-left: 10px;
-}
-
-table,td{
-    border: 1px solid green;
-    border-collapse: collapse;
-}
-
-#clear{
-    background: green;
-    border: none;
-    border-radius: 2%;
-}
-
-#insert{
-    border: none;
-}
-

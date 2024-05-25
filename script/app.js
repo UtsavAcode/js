@@ -1,9 +1,13 @@
-var a = 3;
-var b = 8;
+document.addEventListener("DOMContentLoaded", function () {
+  var tweets = document.getElementById("tweet");
+  var totals = document.getElementById("max");
+  var remains = document.getElementById("remaining");
 
-c = b;
-b = a;
-a = c;
+  var maxLength = tweets.maxLength;
 
-console.log("The value of a is:" + a);
-console.log("The value of b is:" + b);
+  tweets.addEventListener("input", function () {
+    var currentLength = tweets.value.length;
+    totals.innerHTML = currentLength;
+    remains.innerHTML = maxLength - currentLength;
+  });
+});
