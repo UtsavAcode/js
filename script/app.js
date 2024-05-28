@@ -25,6 +25,11 @@ function daysToLive(age) {
 
 daysToLive(89);
 
-function milk(money){
-  
+function milk(money) {
+  var bottles = Math.floor(money / 1.5);
+  console.log("Buy " + bottles + " bottles of milk.");
+  return money % 1.5;
 }
+
+var change = milk(4);
+console.log("This is the money returned " + change);
