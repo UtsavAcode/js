@@ -41,3 +41,21 @@ function bmiCalculator(weight, height) {
 
 var bmi = bmiCalculator(80, 1.9);
 console.log("Your BMI is: " + bmi);
+
+// Random number
+
+var n = Math.random();
+console.log("This is a random number " + n);
+
+// Dice roll simulation
+
+prompt("What is your name??");
+prompt("What is your crush name??");
+function loveCalculator() {
+  var n = Math.random() * 100;
+  var love = Math.floor(n) + 1;
+  return love;
+}
+
+var love = loveCalculator();
+alert("This is the amount of love you will have: " + love + "%");
