@@ -33,3 +33,11 @@ function milk(money) {
 
 var change = milk(4);
 console.log("This is the money returned " + change);
+
+function bmiCalculator(weight, height) {
+  var bmi = weight / Math.pow(height, 2);
+  return Math.round(bmi);
+}
+
+var bmi = bmiCalculator(80, 1.9);
+console.log("Your BMI is: " + bmi);
