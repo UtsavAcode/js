@@ -58,4 +58,17 @@ function loveCalculator() {
 }
 
 var love = loveCalculator();
-alert("This is the amount of love you will have: " + love + "%");
+
+if (love == 100) {
+  alert("They lovee you");
+} else if (love <= 10) {
+  alert("I am sorry but you have low compatibility.");
+} else if ((love <= 50) & (love > 10)) {
+  alert("You can try to woo her maybe you have a chance");
+} else if ((love > 50) & (love < 99)) {
+  alert("You should definitly try harder you can have them.");
+}
+
+ alert("This is the amount of love you will have: " + love + "%");
+
+
