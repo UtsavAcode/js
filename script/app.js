@@ -74,3 +74,18 @@ function leapYear(year) {
 }
 
 leapYear(2020);
+
+// arrays
+
+function guests() {
+  var list = ["Ram", "shyam", "hari", "david"];
+  var name = prompt("What is your name??");
+
+  if (list.includes(name)) {
+    alert("You can go in ...");
+  } else {
+    alert("You cannot go in ...");
+  }
+}
+
+guests();
