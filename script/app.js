@@ -49,26 +49,28 @@ console.log("This is a random number " + n);
 
 // Dice roll simulation
 
-prompt("What is your name??");
-prompt("What is your crush name??");
-function loveCalculator() {
-  var n = Math.random() * 100;
-  var love = Math.floor(n) + 1;
-  return love;
+// var love = loveCalculator();
+
+// if (love == 100) {
+//   alert("They lovee you");
+// } else if (love <= 10) {
+//   alert("I am sorry but you have low compatibility.");
+// } else if ((love <= 50) & (love > 10)) {
+//   alert("You can try to woo her maybe you have a chance");
+// } else if ((love > 50) & (love < 99)) {
+//   alert("You should definitly try harder you can have them.");
+// }
+
+//  alert("This is the amount of love you will have: " + love + "%");
+
+function leapYear(year) {
+  if ((year % 4 === 0 && year % 10 !== 0) || year % 400 === 0) {
+    console.log("The year " + year + " is a leap year");
+  } else {
+    console.log("This year is not a leap year.");
+  }
+
+  return year;
 }
 
-var love = loveCalculator();
-
-if (love == 100) {
-  alert("They lovee you");
-} else if (love <= 10) {
-  alert("I am sorry but you have low compatibility.");
-} else if ((love <= 50) & (love > 10)) {
-  alert("You can try to woo her maybe you have a chance");
-} else if ((love > 50) & (love < 99)) {
-  alert("You should definitly try harder you can have them.");
-}
-
- alert("This is the amount of love you will have: " + love + "%");
-
-
+leapYear(2016);
