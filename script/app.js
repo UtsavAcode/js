@@ -77,15 +77,37 @@ leapYear(2020);
 
 // arrays
 
-function guests() {
-  var list = ["Ram", "shyam", "hari", "david"];
-  var name = prompt("What is your name??");
+// function guests() {
+//   var list = ["Ram", "shyam", "hari", "david"];
+//   var name = prompt("What is your name??");
 
-  if (list.includes(name)) {
-    alert("You can go in ...");
-  } else {
-    alert("You cannot go in ...");
+//   if (list.includes(name)) {
+//     alert("You can go in ...");
+//   } else {
+//     alert("You cannot go in ...");
+//   }
+// }
+
+// guests();
+
+//fizz buzz
+
+function fizzBuzz() {
+  var numbers = [];
+  for (var i = 0; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      numbers.push("FizzBuzz");
+    } else if (i % 3 === 0) {
+      numbers.push("Fizz");
+    } else if (i % 5 === 0) {
+      numbers.push("Buzz");
+    } else {
+      numbers.push(i);
+    }
   }
+
+  return numbers;
 }
 
-guests();
+var numbers = fizzBuzz();
+console.log(numbers);
