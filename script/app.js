@@ -92,22 +92,34 @@ leapYear(2020);
 
 //fizz buzz
 
-function fizzBuzz() {
-  var numbers = [];
-  for (var i = 0; i <= 100; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      numbers.push("FizzBuzz");
-    } else if (i % 3 === 0) {
-      numbers.push("Fizz");
-    } else if (i % 5 === 0) {
-      numbers.push("Buzz");
-    } else {
-      numbers.push(i);
-    }
-  }
+// function fizzBuzz() {
+//   var numbers = [];
+//   for (var i = 0; i <= 100; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//       numbers.push("FizzBuzz");
+//     } else if (i % 3 === 0) {
+//       numbers.push("Fizz");
+//     } else if (i % 5 === 0) {
+//       numbers.push("Buzz");
+//     } else {
+//       numbers.push(i);
+//     }
+//   }
 
-  return numbers;
-}
+//   return numbers;
+// }
 
-var numbers = fizzBuzz();
-console.log(numbers);
+// var numbers = fizzBuzz();
+// console.log(numbers);
+
+//Random person problem
+
+// function randomPerson() {
+//   var people = ["Utsav", "Ram", "Shyam", "Hari", "Xotey"];
+//   var numberOfPeople = people.length;
+//   var place = Math.floor(Math.random() * numberOfPeople);
+//   var person = people[place];
+//   return person + " Will pay for the lunch";
+// }
+
+// console.log(randomPerson());
