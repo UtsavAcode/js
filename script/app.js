@@ -144,3 +144,46 @@ leapYear(2020);
 // }
 
 // console.log(fibonacci(5));
+
+
+// //Re fibonacci
+
+// function re(n){
+//   sequence=[];
+
+
+//   if(n<=0){
+//     sequence=[];
+//   }
+
+//   else if (n===1){
+//     sequence = [0];
+//   }
+
+//   else if(n===2){
+//     sequence = [0,1];
+//   }
+
+//   else{
+//     sequence = [0,1];
+
+//     for (var i=2; i<=n; i++){
+
+
+//       sequence.push(sequence[i-2]+sequence[i-1]);
+//     }
+//   }
+
+//   return sequence;
+// }
+
+// console.log(re(10));
+
+function color(){
+  var colors = document.querySelector('#number');
+
+  colors.style.color = "red";
+
+}
+
+color();
