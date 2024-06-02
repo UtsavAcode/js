@@ -123,3 +123,24 @@ leapYear(2020);
 // }
 
 // console.log(randomPerson());
+
+//fibonacci sequence
+
+// function fibonacci(n) {
+//   var sequence = [];
+
+//   if (n === 1) {
+//     sequence = [0];
+//   } else if (n === 2) {
+//     sequence = [0, 1];
+//   } else {
+//     sequence = [0, 1];
+
+//     for (var i = 2; i <= n; i++) {
+//       sequence.push(sequence[i - 2] + sequence[i - 1]);
+//     }
+//   }
+//   return sequence;
+// }
+
+// console.log(fibonacci(5));
