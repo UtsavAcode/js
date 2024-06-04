@@ -1,51 +1,51 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var tweets = document.getElementById("tweet");
-  var totals = document.getElementById("max");
-  var remains = document.getElementById("remaining");
+// document.addEventListener("DOMContentLoaded", function () {
+//   var tweets = document.getElementById("tweet");
+//   var totals = document.getElementById("max");
+//   var remains = document.getElementById("remaining");
 
-  var maxLength = tweets.maxLength;
+//   var maxLength = tweets.maxLength;
 
-  tweets.addEventListener("input", function () {
-    var currentLength = tweets.value.length;
-    totals.innerHTML = currentLength;
-    remains.innerHTML = maxLength - currentLength;
-  });
-});
+//   tweets.addEventListener("input", function () {
+//     var currentLength = tweets.value.length;
+//     totals.innerHTML = currentLength;
+//     remains.innerHTML = maxLength - currentLength;
+//   });
+// });
 
-function daysToLive(age) {
-  var TimeToLive = 90 - age;
-  var days = TimeToLive * 365;
-  var weeks = TimeToLive * 52;
-  var months = TimeToLive * 12;
+// function daysToLive(age) {
+//   var TimeToLive = 90 - age;
+//   var days = TimeToLive * 365;
+//   var weeks = TimeToLive * 52;
+//   var months = TimeToLive * 12;
 
-  console.log(
-    "You have " + days + " days " + weeks + " weeks and " + months + " to live."
-  );
-}
+//   console.log(
+//     "You have " + days + " days " + weeks + " weeks and " + months + " to live."
+//   );
+// }
 
-daysToLive(89);
+// daysToLive(89);
 
-function milk(money) {
-  var bottles = Math.floor(money / 1.5);
-  console.log("Buy " + bottles + " bottles of milk.");
-  return money % 1.5;
-}
+// function milk(money) {
+//   var bottles = Math.floor(money / 1.5);
+//   console.log("Buy " + bottles + " bottles of milk.");
+//   return money % 1.5;
+// }
 
-var change = milk(4);
-console.log("This is the money returned " + change);
+// var change = milk(4);
+// console.log("This is the money returned " + change);
 
-function bmiCalculator(weight, height) {
-  var bmi = weight / Math.pow(height, 2);
-  return Math.round(bmi);
-}
+// function bmiCalculator(weight, height) {
+//   var bmi = weight / Math.pow(height, 2);
+//   return Math.round(bmi);
+// }
 
-var bmi = bmiCalculator(80, 1.9);
-console.log("Your BMI is: " + bmi);
+// var bmi = bmiCalculator(80, 1.9);
+// console.log("Your BMI is: " + bmi);
 
-// Random number
+// // Random number
 
-var n = Math.random();
-console.log("This is a random number " + n);
+// var n = Math.random();
+// console.log("This is a random number " + n);
 
 // Dice roll simulation
 
@@ -63,17 +63,17 @@ console.log("This is a random number " + n);
 
 //  alert("This is the amount of love you will have: " + love + "%");
 
-function leapYear(year) {
-  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
-    console.log("The year " + year + " is a leap year");
-  } else {
-    console.log("This year is not a leap year.");
-  }
+// function leapYear(year) {
+//   if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+//     console.log("The year " + year + " is a leap year");
+//   } else {
+//     console.log("This year is not a leap year.");
+//   }
 
-  return year;
-}
+//   return year;
+// }
 
-leapYear(2020);
+// leapYear(2020);
 
 // arrays
 
@@ -145,12 +145,10 @@ leapYear(2020);
 
 // console.log(fibonacci(5));
 
-
 // //Re fibonacci
 
 // function re(n){
 //   sequence=[];
-
 
 //   if(n<=0){
 //     sequence=[];
@@ -169,7 +167,6 @@ leapYear(2020);
 
 //     for (var i=2; i<=n; i++){
 
-
 //       sequence.push(sequence[i-2]+sequence[i-1]);
 //     }
 //   }
@@ -187,3 +184,23 @@ leapYear(2020);
 // }
 
 // color();
+
+// To do lIst section
+
+function toDoList() {
+  const taskArea = document.querySelector("taskarea");
+  const taskList = document.querySelector("task");
+
+  taskArea.addEventListener("keyup", (event) => {
+    if (event.KeyCode === 13) {
+      const taskText = taskArea.value;
+      taskList.textContent = taskText;
+
+      //clearing the text area
+
+      taskArea.value = "";
+    }
+  });
+}
+
+toDoList();
