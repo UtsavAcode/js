@@ -187,20 +187,24 @@
 
 // To do lIst section
 
-function toDoList() {
-  const taskArea = document.querySelector("taskarea");
-  const taskList = document.querySelector("task");
+const taskArea = document.getElementById("taskhead");
+const taskList = document.getElementById("task");
 
-  taskArea.addEventListener("keyup", (event) => {
-    if (event.KeyCode === 13) {
-      const taskText = taskArea.value;
-      taskList.textContent = taskText;
+taskArea.addEventListener("keyup", (e) => {
+  if (e.KeyCode === 13) {
+    // const taskText = taskArea.target.value;
+    // taskList.innerHTML += taskText = "<br>";
+    // if (taskText) {
+    //   console.log(taskText);
+    // } else {
+    //   console.log("No value");
+    // }
 
-      //clearing the text area
+    const value = taskArea.value;
 
-      taskArea.value = "";
-    }
-  });
-}
+    console.log(value);
+    //clearing the text area
 
-toDoList();
+    // taskArea.value = "";
+  }
+});

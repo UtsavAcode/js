@@ -40,7 +40,8 @@ body{
 
 }
 
-#taskarea{
+#taskarea, #taskhead{
+  border: 1px solid gray;
   margin: 0 0 2rem 0;
   text-align: center;
   width: 50%;

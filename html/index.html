@@ -24,27 +24,28 @@
   </head>
   <body>
     <!-- To do List -->
-      <div class="container">
-        <h1 id="heading">To do List </h1>
-  
-        <!-- Adding a task -->
-        <h2 id="heading2">Add a Task</h2>
+    <div class="container">
+      <h1 id="heading">To do List</h1>
 
-        <textarea id="taskarea" placeholder="Type and press Enter." rows="2"></textarea> 
+      <!-- Adding a task -->
+      <h2 id="heading2">Add a Task</h2>
 
-        <h3 id="taskheader">
-          Here are your tasks
-        </h3>
+      <input
+        type="text"
+        id="taskhead"
+        placeholder="Enter your task heading here."
+        minlength="100"
+      />
+      <!-- <textarea id="taskarea" placeholder="Type and press Enter." rows="2"></textarea>  -->
 
-        <div class="tasklist">
-          <ul>
-            <li id="task"></li>
-          </ul>
-        </div>
+      <h3 id="taskheader">Here are your tasks</h3>
 
-
+      <div class="tasklist">
+        <ul>
+          <li id="task"></li>
+        </ul>
       </div>
-
+    </div>
 
     <!-- this is the script section  -->
     <script src="../script/app.js"></script>
