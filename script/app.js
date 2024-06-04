@@ -179,11 +179,11 @@ leapYear(2020);
 
 // console.log(re(10));
 
-function color(){
-  var colors = document.querySelector('#number');
+// function color(){
+//   var colors = document.querySelector('#number');
 
-  colors.style.color = "red";
+//   colors.style.color = "red";
 
-}
+// }
 
-color();
+// color();
