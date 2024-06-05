@@ -188,17 +188,34 @@
 // To do lIst section
 
 const taskArea = document.getElementById("taskhead");
-const taskList = document.getElementById("task");
+const taskList = document.getElementById("tasks");
 
 taskArea.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     const taskText = taskArea.value;
     console.log(taskText);
     const newListItem = document.createElement("li");
-    newListItem.id = "task";
-    newListItem.textContent = taskText;
+    newListItem.className = "task";
+    // newListItem.textContent = taskText;
 
-    document.querySelector(".tasklist").appendChild(newListItem);
+    //creating the checkbox
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.className = "tick";
+
+    //create a span element for the taskText
+
+    const taskTextSpan = document.createElement("span");
+    taskTextSpan.textContent = taskText;
+
+    newListItem.appendChild(checkbox);
+    newListItem.appendChild(taskTextSpan);
+
+    //Append the newListItem to the task list
+    taskList.appendChild(newListItem);
+
+    // document.querySelector("#tasks").appendChild(newListItem);
 
     // clearing the text area
 

@@ -49,7 +49,25 @@ body {
   border-radius: 5px;
 }
 
-#task {
+.tasklist {
+  width: 95%;
+  text-align: left;
+}
+
+#tasks {
+  width: 95%;
+  padding: 0;
+}
+
+#tasks span {
+  width: 90%;
+}
+.task {
   color: red;
   list-style: none;
+  width: 80%;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 0.5rem;
 }
