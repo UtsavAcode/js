@@ -193,15 +193,12 @@ const taskList = document.getElementById("task");
 taskArea.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     const taskText = taskArea.value;
+    console.log(taskText);
+    const newListItem = document.createElement("li");
+    newListItem.id = "task";
+    newListItem.textContent = taskText;
 
-    // taskList.innerHTML += taskText + "<br>";
-    if (taskText.trim() !== "") {
-      taskList.innerHTML += taskText;
-
-      console.log(taskText);
-    } else {
-      console.log("No value");
-    }
+    document.querySelector(".tasklist").appendChild(newListItem);
 
     // clearing the text area
 

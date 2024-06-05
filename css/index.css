@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #eee;
 }
-.container{
+.container {
   height: auto;
   width: 50%;
   margin: 5rem auto;
@@ -20,27 +20,27 @@ body{
   align-items: center;
 }
 
-#heading, #heading2{
+#heading,
+#heading2 {
   text-align: center;
   border-bottom: 1px solid gray;
-  width:50%;
-  margin:auto auto 3rem auto;
-  padding:0 0 13px 0;
-
+  width: 50%;
+  margin: auto auto 3rem auto;
+  padding: 0 0 13px 0;
 }
 
- #heading2{
+#heading2 {
   text-align: center;
   border: 1px solid gray;
   border-radius: 5px;
   text-align: center;
-  width:50%;
-  margin:auto auto 3rem auto;
-  padding:9px 0 13px 0;
-
+  width: 50%;
+  margin: auto auto 3rem auto;
+  padding: 9px 0 13px 0;
 }
 
-#taskarea, #taskhead{
+#taskarea,
+#taskhead {
   border: 1px solid gray;
   margin: 0 0 2rem 0;
   text-align: center;
@@ -49,3 +49,7 @@ body{
   border-radius: 5px;
 }
 
+#task {
+  color: red;
+  list-style: none;
+}
