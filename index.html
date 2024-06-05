@@ -1,28 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Check</title>
-</head>
-<body>
-    <h1>Enter a message:</h1>
-    <input type="text" id="myInput" placeholder="Type something">
-
+    <title>Enter Key Event</title>
     <script>
-        const inputField = document.getElementById("myInput");
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const inputField = document.getElementById('inputField');
 
-        inputField.addEventListener("keyup", (event) => {
-            if (event.key === "Enter" && inputField.value.trim() === "hello world") {
-                console.log("Hello world!");
-                inputField.value = ""; // Clear the input field after successful match
-            }
+            inputField.addEventListener('keydown', function(event) {
+                if (event.key === 'Enter') {
+                    console.log(inputField.value);
+                }
+            });
         });
     </script>
+</head>
+<body>
+    <h1>Type something and press Enter</h1>
+    <input type="text" id="inputField" placeholder="Type here...">
 </body>
 </html>
-
-
-
-
-

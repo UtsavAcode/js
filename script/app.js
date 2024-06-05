@@ -190,8 +190,8 @@
 const taskArea = document.getElementById("taskhead");
 const taskList = document.getElementById("task");
 
-taskArea.addEventListener("keyup", (e) => {
-  if (e.KeyCode === 13) {
+taskArea.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
     // const taskText = taskArea.target.value;
     // taskList.innerHTML += taskText = "<br>";
     // if (taskText) {
