@@ -1,21 +1,154 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Enter Key Event</title>
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            const inputField = document.getElementById('inputField');
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinAstra</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* styles.css */
+      body {
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
 
-            inputField.addEventListener('keydown', function(event) {
-                if (event.key === 'Enter') {
-                    console.log(inputField.value);
-                }
-            });
+      header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #d9534f;
+        color: white;
+        padding: 10px;
+      }
+
+      .sidebar {
+        background-color: #d9534f;
+        padding: 10px;
+        width: 200px;
+        color: white;
+      }
+
+      .sidebar input {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+
+      .sidebar button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 5px;
+        background-color: white;
+        color: #d9534f;
+        border: none;
+        cursor: pointer;
+      }
+
+      .sidebar button:hover {
+        background-color: #c9302c;
+        color: white;
+      }
+
+      main {
+        flex-grow: 1;
+        padding: 10px;
+      }
+
+      .controls {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .controls label {
+        margin-right: 10px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      thead {
+        background-color: #f2f2f2;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <h1>FinAstra</h1>
+        <h2>Birat Arjun Consumer Co-operative Ltd.</h2>
+        <p>Birtamode - 4, Jhapa</p>
+      </div>
+      <div class="header-right">
+        <p>2081/02/23</p>
+        <p>2024/06/05</p>
+        <p>12:48 PM</p>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <input type="text" placeholder="Search..." />
+      <button>Member Registration</button>
+      <button>Share Purchase</button>
+      <button>Counter Deposit</button>
+      <button>Counter Withdraw</button>
+      <button>Deposit Collection</button>
+      <button>Account Statement</button>
+      <button>Loan Receipt</button>
+      <button>Journal Entry</button>
+      <button>Day Voucher</button>
+      <button>Day Close</button>
+    </aside>
+    <main>
+      <h3>Member > Basic Report > Member By Location</h3>
+      <div class="controls">
+        <label for="branch-select">Select Branch:</label>
+        <select id="branch-select">
+          <option value="main-branch">Main Branch</option>
+        </select>
+        <button>Search</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Sn</th>
+            <th>VDC/Municipality</th>
+            <th>Total Member</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Other</td>
+            <td>362</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>0</td>
+            <td>64</td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </main>
+    <script>
+      // script.js
+      document.addEventListener("DOMContentLoaded", () => {
+        const searchButton = document.querySelector(".controls button");
+        searchButton.addEventListener("click", () => {
+          alert("Search button clicked");
         });
+      });
     </script>
-</head>
-<body>
-    <h1>Type something and press Enter</h1>
-    <input type="text" id="inputField" placeholder="Type here...">
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

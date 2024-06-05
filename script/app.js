@@ -192,19 +192,19 @@ const taskList = document.getElementById("task");
 
 taskArea.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
-    // const taskText = taskArea.target.value;
-    // taskList.innerHTML += taskText = "<br>";
-    // if (taskText) {
-    //   console.log(taskText);
-    // } else {
-    //   console.log("No value");
-    // }
+    const taskText = taskArea.value;
 
-    const value = taskArea.value;
+    // taskList.innerHTML += taskText + "<br>";
+    if (taskText.trim() !== "") {
+      taskList.innerHTML += taskText;
 
-    console.log(value);
-    //clearing the text area
+      console.log(taskText);
+    } else {
+      console.log("No value");
+    }
 
-    // taskArea.value = "";
+    // clearing the text area
+
+    taskArea.value = "";
   }
 });
