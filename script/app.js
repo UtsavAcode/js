@@ -222,5 +222,11 @@ taskArea.addEventListener("keydown", (e) => {
     // clearing the text area
 
     taskArea.value = "";
+
+    //Deleting the list item
+
+    deleteButton.addEventListener("click", (e) => {
+      taskList.removeChild(newListItem);
+    });
   }
 });
