@@ -204,18 +204,20 @@ taskArea.addEventListener("keydown", (e) => {
     checkbox.type = "checkbox";
     checkbox.className = "tick";
 
+    const deleteButton = document.createElement("button");
+    deleteButton.className = "delete";
+    deleteButton.innerHTML = '<i class="bi bi-trash"></i>';
     //create a span element for the taskText
 
     const taskTextSpan = document.createElement("span");
+    taskTextSpan.className = "spans";
     taskTextSpan.textContent = taskText;
 
     newListItem.appendChild(checkbox);
     newListItem.appendChild(taskTextSpan);
-
+    newListItem.appendChild(deleteButton);
     //Append the newListItem to the task list
     taskList.appendChild(newListItem);
-
-    // document.querySelector("#tasks").appendChild(newListItem);
 
     // clearing the text area
 
