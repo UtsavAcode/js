@@ -207,6 +207,10 @@ taskArea.addEventListener("keydown", (e) => {
     const deleteButton = document.createElement("button");
     deleteButton.className = "delete";
     deleteButton.innerHTML = '<i class="bi bi-trash"></i>';
+
+    const addButton = document.createElement("button");
+    addButton.className = "add";
+    addButton.innerHTML = '<i class="bi bi-plus-square"></i>';
     //create a span element for the taskText
 
     const taskTextSpan = document.createElement("span");
@@ -216,6 +220,7 @@ taskArea.addEventListener("keydown", (e) => {
     newListItem.appendChild(checkbox);
     newListItem.appendChild(taskTextSpan);
     newListItem.appendChild(deleteButton);
+    newListItem.appendChild(addButton);
     //Append the newListItem to the task list
     taskList.appendChild(newListItem);
 
