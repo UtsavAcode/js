@@ -21,20 +21,26 @@ body {
 }
 
 .container .dice {
-  width: 50%;
+  width: 200px;
   border: 2px solid black;
   /* margin: 3rem auto 0 auto; */
   background-color: red;
-  height: 50%;
+  height: 200px;
   border-radius: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+.side {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+}
 .left_row,
 .right_row {
-  height: 90%;
+  height: 80%;
+
   width: 30%;
   margin: 1rem;
   display: flex;
@@ -43,8 +49,89 @@ body {
   align-items: center;
 }
 .dot {
-  height: 13%;
+  height: 20%;
   border-radius: 45%;
-  width: 80%;
+  width: 20%;
   background-color: #fff;
+}
+
+.side_one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.side_two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.side_three {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  transform: rotate(43deg);
+}
+
+.side_four {
+  display: flex;
+  justify-content: space-between;
+}
+.side_four .dot {
+  width: 2rem;
+  height: 2rem;
+}
+
+.side_five {
+  display: flex;
+  justify-content: space-between;
+}
+
+.side_five .dot {
+  width: 2rem;
+  height: 2rem;
+}
+
+#middle {
+  margin: auto;
+  width: 2.3rem;
+  height: 2.2rem;
+}
+
+.side_six {
+  display: flex;
+  justify-content: space-between;
+}
+
+.side_six .dot {
+  height: 2rem;
+  width: 2rem;
+}
+
+side:nth-child(1) {
+  transform: translateZ(3.1em);
+}
+
+.side:nth-child(6) {
+  transform: rotateY(90deg) translateZ(3.1em);
+}
+
+.side:nth-child(3) {
+  transform: rotateY(-90deg) translateZ(3.1em);
+}
+
+.side:nth-child(4) {
+  transform: rotateX(90deg) translateZ(3.1em);
+}
+
+.side:nth-child(5) {
+  transform: rotateX(-90deg) translateZ(3.1em);
+}
+
+.side:nth-child(2) {
+  transform: rotateY(-180deg) translateZ(3.1em);
 }
